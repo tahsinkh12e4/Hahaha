@@ -24,7 +24,7 @@ def credit():
 
 @app.route("/auto/<string:channel_id>.m3u8")
 def handle_auto(channel_id):
-    url=f"https://lovesomecommunity.com/embedcr.php?player=desktop&live="+channel_id
+    url=f"https://lovesomecommunity.com/embedcr.php?player=desktop&live={channel_id}
     res=requests.get(url,headers=headers).text
  
     
