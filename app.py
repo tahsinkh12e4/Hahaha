@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 headers={
 
-  "Referer": "https://lovesomecommunity.com/",
+  "Referer": "https://streamservicehd.click/",
 
   "User-Agent": "Android"
 }
@@ -24,8 +24,8 @@ def credit():
 
 @app.route("/auto/<string:channel_id>.m3u8")
 def handle_auto(channel_id):
-    url=f"https://lovesomecommunity.com/embedcr.php?player=desktop&live={channel_id}
-    res=requests.get(url,headers=headers).text
+    url=f"https://crichdvipphp.tahsin-ahmedahm.repl.co/crichdvipp/play.php?id="+channel_id
+    res=requests.get(url).text
  
     
  
